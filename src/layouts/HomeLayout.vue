@@ -16,7 +16,6 @@
     <q-page-container>
       <router-view/>
     </q-page-container>
-
     <q-footer class="footer-trans purple-6 items-center text-white">
         <!--    底部版权信息-->
       <CopyrightBar></CopyrightBar>
@@ -28,9 +27,10 @@
 <script>
 import CollectionLinks from 'components/CollectionLinks'
 import CopyrightBar from 'components/CopyrightBar'
+
 export default {
   name: 'HomeLayout',
-  components: { CopyrightBar, CollectionLinks },
+  components: { CollectionLinks, CopyrightBar },
   data () {
     return {
       right: false

@@ -87,6 +87,14 @@ module.exports = function (/* ctx */) {
           pathRewrite: {
             '^/getBing/': ''
           }
+        },
+        '/getLinks': {
+          target: 'http://localhost:3000',
+          changeOrigin: true,
+          ws: true,
+          pathRewrite: {
+            '^/getLinks/': ''
+          }
         }
       }
     },

@@ -461,6 +461,15 @@ export default {
         this.bingImage.copyrightLink = image.copyrightlink
         this.getBingImageBlob(this.bingImage.url)
       })
+    await getRequest('/getLinks').then(res => {
+      if (res.data != null) {
+        console.log('得到服务器响应数据，使用服务器响应数据')
+        console.log(res.data)
+        this.links = res.data
+      } else {
+        console.log('请求服务器出错了！使用默认预置数据')
+      }
+    })
   },
   methods: {
     // 获得本地 blob 链接地址

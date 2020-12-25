@@ -20,7 +20,7 @@
               <div class="text-grey text-subtitle2">
                 喜欢这张壁纸吗?
               </div>
-              <q-btn flat style="color: gray;" round icon="save_alt" @click="downloadBingImage"/>
+              <q-btn flat style="color: #808080;" round icon="save_alt" @click="downloadBingImage"/>
             </div>
           </div>
         </div>
