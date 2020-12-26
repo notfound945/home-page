@@ -461,7 +461,7 @@ export default {
         this.bingImage.copyrightLink = image.copyrightlink
         this.getBingImageBlob(this.bingImage.url)
       })
-    await getRequest('/getLinks').then(res => {
+    await getRequest('/getLinks/all').then(res => {
       if (res.data != null) {
         console.log('得到服务器响应数据，使用服务器响应数据')
         console.log(res.data)
